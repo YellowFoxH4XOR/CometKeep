@@ -1,0 +1,51 @@
+{
+  "name": "cometkeep",
+  "version": "0.1.0",
+  "description": "A privacy-focused browser extension for local file storage and text extraction",
+  "main": "popup/popup.js",
+  "scripts": {
+    "lint": "echo 'No linting configured yet'",
+    "test": "echo 'No tests configured yet'",
+    "build": "echo 'No build process needed - extension ready to use'",
+    "package": "zip -r cometkeep-v$npm_package_version.zip . -x '*.git*' 'node_modules/*' '*.DS_Store' 'package.json' 'package-lock.json' '.gitignore' 'docs/*' 'assets/*' 'README.md' 'CONTRIBUTING.md' 'CHANGELOG.md' 'SECURITY.md'",
+    "dev": "echo 'Load extension in browser developer mode from this directory'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/cometkeep.git"
+  },
+  "keywords": [
+    "browser-extension",
+    "pdf",
+    "text-extraction",
+    "privacy",
+    "local-storage",
+    "chrome-extension",
+    "file-management"
+  ],
+  "author": "CometKeep Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/cometkeep/issues"
+  },
+  "homepage": "https://github.com/yourusername/cometkeep#readme",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "chrome": ">=88",
+    "edge": ">=88"
+  },
+  "browser": {
+    "pdfjs": "./popup/pdf.min.js"
+  },
+  "files": [
+    "manifest.json",
+    "popup/",
+    "background/",
+    "icons/"
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/yourusername"
+  }
+}

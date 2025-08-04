@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "CometKeep",
+  "version": "0.1.0",
+  "description": "A private browser extension for uploading, storing, searching, and referencing files solely in your browser's local storage.",
+  "permissions": [
+    "storage",
+    "unlimitedStorage"
+  ],
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.svg",
+      "48": "icons/icon48.svg",
+      "128": "icons/icon128.svg"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.svg",
+    "48": "icons/icon48.svg",
+    "128": "icons/icon128.svg"
+  }
+}
